@@ -24,9 +24,12 @@ You can pass the CoinCap API token in different ways. Choose the one that fits y
    coincap_exchange --file results.csv --api-key <COINCAP_API_KEY>
    ```
 2. Declare it as an environment variable and simply call the app. E.g. in Bash shell:
-  ```bash
+   ```bash
    export COINCAP_API_KEY=<COINCAP_API_KEY>
-  ```
+   ```
+   ```shell
+   coincap_exchange --file results.csv
+   ```
 3. Store it in a `.env` file in the same directory where you run the CLI, which is automatically
    picked up by the app:
    ```
@@ -35,3 +38,9 @@ You can pass the CoinCap API token in different ways. Choose the one that fits y
    ```shell
    coincap_exchange --file results.csv
    ```
+
+Check the CLI help menu to find the few options it offers to run:
+
+```shell
+coincap_exchange --help
+```
