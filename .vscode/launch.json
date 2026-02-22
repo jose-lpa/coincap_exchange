@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb-dap",
+            "request": "launch",
+            "name": "cargo run -p coincap_exchange",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/target/debug/coincap_exchange",
+            "args": [
+                "--file", "${workspaceFolder}/exchange_data.csv",
+                "--debug", "3"
+            ],
+            "env": [
+                "RUST_BACKTRACE=short",
+            ],
+        }
+    ]
+}
