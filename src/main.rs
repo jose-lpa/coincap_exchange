@@ -46,6 +46,7 @@ struct Cli {
 }
 
 fn main() -> Result<()> {
+    dotenvy::dotenv().ok();
     let cli = Cli::parse();
 
     let log_level = match cli.debug {

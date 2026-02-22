@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 clap = { version = "4.5.60", features = ["derive", "env"] }
+dotenvy = "0.15.7"
 duckdb = { version = "1.4.4", features = ["bundled"] }
 env_logger = "0.11.9"
 log = "0.4.29"
